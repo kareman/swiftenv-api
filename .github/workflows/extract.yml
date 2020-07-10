@@ -19,8 +19,11 @@ jobs:
       run: |
         python3 -m venv venv
         source venv/bin/activate
+        pip3 install --upgrade pip' 
         pip3 install -r requirements.txt
         pip3 install -r dev-requirements.txt
+        echo
+        echo pip3 install requests
         pip3 install requests
     - name: Extract new swift tags
       run: |
