@@ -23,8 +23,8 @@ jobs:
         pip install -r dev-requirements.txt
     - name: Extract new swift tags
       run: |
-        python extract.py --commit
-        python -m unittest
+        python3 extract.py --commit
+        python3 -m unittest
     - name: Push to master
       run: git push origin master
       
